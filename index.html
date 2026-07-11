@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#14100C">
+  <title>ШампурOFF — гриль-бар в Радужном | Шашлык, стейки, кухня на мангале</title>
+  <meta name="description" content="Гриль-бар «ШампурOFF» в г. Радужный (ХМАО — Югра): шашлыки на углях, стейки из мраморной говядины, пицца, салаты и десерты. 3-й микрорайон, 22. Бронирование: +7 (904) 487-77-05.">
+  <meta property="og:title" content="ШампурOFF — гриль-бар в Радужном">
+  <meta property="og:description" content="Вкус, который запоминается. Кухня на мангале, стейки, уютная атмосфера и два VIP-зала.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:image" content="img/platter.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FAF6EF'/%3E%3Cpath d='M32 12c4 6-3 9 1 14 3 4 8 5 8 12a9 9 0 0 1-18 0c0-7 5-8 8-12 3-4-3-8 1-14z' fill='%23C6A15B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "ШампурOFF",
+    "servesCuisine": ["Гриль", "Кавказская", "Европейская"],
+    "telephone": "+79044877705",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Ханты-Мансийский автономный округ — Югра",
+      "addressLocality": "Радужный",
+      "streetAddress": "3-й микрорайон, 22"
+    },
+    "sameAs": ["https://vk.ru/shampuroff.grillbar"],
+    "priceRange": "₽₽"
+  }
+  </script>
+</head>
+<body>
+
+  <div class="progressbar" id="progressbar" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <svg class="preloader__flame" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true">
+        <path d="M32 8c5 8-4 12 1 18 4 5 10 7 10 16a11 11 0 0 1-22 0c0-9 6-11 10-16 4-6-4-10 1-18z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      </svg>
+      <div class="preloader__word">ШампурOFF</div>
+      <div class="preloader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo" data-scroll>
+        <svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><path d="M32 8c5 8-4 12 1 18 4 5 10 7 10 16a11 11 0 0 1-22 0c0-9 6-11 10-16 4-6-4-10 1-18z" fill="currentColor"/></svg>
+        <span>Шампур<em>OFF</em></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Основная навигация">
+        <a href="#hero" data-scroll>Главная</a>
+        <a href="#about" data-scroll>О нас</a>
+        <a href="#menu" data-scroll>Меню</a>
+        <a href="#gallery" data-scroll>Галерея</a>
+        <a href="#reviews" data-scroll>Отзывы</a>
+        <a href="#contacts" data-scroll>Контакты</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="img/platter.jpg" alt="" fetchpriority="high">
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <canvas class="hero__embers" id="embers" aria-hidden="true"></canvas>
+      <div class="hero__content container">
+        <div class="hero__eyebrow reveal-hero">Гриль-бар · Радужный</div>
+        <h1 class="hero__title reveal-hero">ШАМПУР<span>OFF</span></h1>
+        <div class="hero__divider reveal-hero" aria-hidden="true"><i></i><b></b><i></i></div>
+        <p class="hero__subtitle reveal-hero">«Вкус, который запоминается.»</p>
+        <div class="hero__actions reveal-hero">
+          <a href="#menu" class="btn btn--gold magnetic" data-scroll>📖 Смотреть меню</a>
+          <a href="tel:+79044877705" class="btn btn--glass magnetic" target="_top">Забронировать столик</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" data-scroll aria-label="Листать вниз"><span></span></a>
+      <button class="share-btn hero__share" id="shareBtn" aria-label="Поделиться сайтом">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+        <span>Поделиться</span>
+      </button>
+    </section>
+
+    <!-- Бегущая строка -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track" id="tickerTrack"></div>
+    </div>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__eyebrow">О ресторане</div>
+          <h2 class="section__title">Кухня живого огня</h2>
+          <div class="skewer-divider" aria-hidden="true"><i></i><b></b><i></i></div>
+        </div>
+        <div class="about__grid">
+          <div class="about__media reveal">
+            <figure class="about__photo about__photo--main">
+              <img src="img/exterior.jpg" alt="Здание гриль-бара ШампурOFF в Радужном" loading="lazy">
+            </figure>
+            <figure class="about__photo about__photo--accent floating">
+              <img src="img/shashlik.jpg" alt="Шашлык из свинины на шампуре" loading="lazy">
+            </figure>
+          </div>
+          <div class="about__text reveal">
+            <p class="about__lead">«ШампурOFF» — гриль-бар в самом сердце Радужного. Мы готовим на настоящих углях: шашлыки, люля-кебаб, стейки из мраморной говядины и рыбу на гриле.</p>
+            <p>В зале — уютная атмосфера и два отдельных VIP-зала, где можно уединиться своей компанией. Отмечайте праздники, приходите семьёй или заглядывайте на обед — мы всегда рады гостям.</p>
+            <div class="about__counters">
+              <div class="counter"><span class="counter__num" data-count="120">0</span><span class="counter__cap">блюд в меню</span></div>
+              <div class="counter"><span class="counter__num" data-count="9">0</span><span class="counter__cap">видов шашлыка и саджа</span></div>
+              <div class="counter"><span class="counter__num" data-count="2">0</span><span class="counter__cap">VIP-зала</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature glass reveal"><div class="feature__icon">🥩</div><h3>Свежие продукты</h3><p>Мясо, рыба и овощи — только свежие, проверенные поставки каждый день.</p></div>
+          <div class="feature glass reveal"><div class="feature__icon">🔥</div><h3>Блюда на мангале</h3><p>Готовим на живых углях — с ароматом дыма и правильной корочкой.</p></div>
+          <div class="feature glass reveal"><div class="feature__icon">🕯️</div><h3>Уютная атмосфера</h3><p>Тёплый свет, спокойная музыка и два VIP-зала для вашей компании.</p></div>
+          <div class="feature glass reveal"><div class="feature__icon">👨‍🍳</div><h3>Опытные повара</h3><p>Команда, которой гости говорят «низкий поклон» в отзывах.</p></div>
+          <div class="feature glass reveal"><div class="feature__icon">🤍</div><h3>Качественный сервис</h3><p>Внимательные официанты и подача даже при полном зале — за 20 минут.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Шеф рекомендует -->
+    <section class="chef section--tinted" id="chef">
+      <div class="section__head reveal">
+        <div class="section__eyebrow">Выбор кухни</div>
+        <h2 class="section__title">Шеф рекомендует</h2>
+        <div class="skewer-divider" aria-hidden="true"><i></i><b></b><i></i></div>
+      </div>
+      <div class="chef__strip reveal" id="chefStrip"></div>
+      <p class="chef__hint">Листайте ленту — все блюда есть в меню ниже</p>
+    </section>
+
+    <!-- Parallax band -->
+    <section class="band" aria-hidden="true">
+      <img src="img/mussels.jpg" alt="" class="band__img" loading="lazy" data-parallax>
+      <div class="band__veil"></div>
+      <p class="band__quote reveal">Огонь, дым и терпение — три главных ингредиента</p>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__eyebrow">Меню</div>
+          <h2 class="section__title">Что попробовать</h2>
+          <div class="skewer-divider" aria-hidden="true"><i></i><b></b><i></i></div>
+          <p class="section__sub">Полное меню гриль-бара — цены и граммовки указаны для зала.</p>
+        </div>
+        <div class="menu__search reveal">
+          <input type="search" id="menuSearch" placeholder="Поиск по меню: «цезарь», «рёбра», «лосось»…" aria-label="Поиск по меню" autocomplete="off">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        </div>
+        <div class="menu__count" id="menuCount" aria-live="polite"></div>
+        <div class="menu__tabs reveal" id="menuTabs" role="tablist" aria-label="Категории меню"></div>
+        <div class="menu__panels" id="menuPanels"></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section section--tinted" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__eyebrow">Галерея</div>
+          <h2 class="section__title">Из-под ножа и с углей</h2>
+          <div class="skewer-divider" aria-hidden="true"><i></i><b></b><i></i></div>
+        </div>
+        <div class="masonry" id="masonry">
+          <figure class="masonry__item reveal"><img src="img/platter.jpg" alt="Банкетное блюдо: шашлык, люля-кебаб, булгур и овощи на лаваше" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/fish.jpg" alt="Рыба на гриле с черри и лимоном" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/cheese.jpg" alt="Сырное плато с виноградом и орехами" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/shrimp.jpg" alt="Тигровые креветки с лаймом и мятой" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/kebab.jpg" alt="Шашлык в лаваше с маринованным луком и соусом" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/salad.jpg" alt="Свежий овощной салат с микрозеленью" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/mussels.jpg" alt="Мидии, запечённые под сыром" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/ducksalad.jpg" alt="Салат с уткой гриль" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/nuggets.jpg" alt="Куриные наггетсы с овощами и кетчупом" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/dessert.jpg" alt="Десерт с мороженым и шоколадом" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/shashlik.jpg" alt="Шашлык на шампуре с чесноком и соусом" loading="lazy"></figure>
+          <figure class="masonry__item reveal"><img src="img/exterior.jpg" alt="Фасад гриль-бара ШампурOFF" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__eyebrow">Отзывы</div>
+          <h2 class="section__title">Отзывы наших гостей</h2>
+          <div class="skewer-divider" aria-hidden="true"><i></i><b></b><i></i></div>
+          <p class="section__sub">Реальные оценки с Яндекс Карт</p>
+          <div class="rating-badge reveal">
+            <span class="rating-badge__num">5,0</span>
+            <span class="rating-badge__stars" aria-hidden="true">★★★★★</span>
+            <span class="rating-badge__cap">средняя оценка<br>по опубликованным отзывам</span>
+          </div>
+        </div>
+        <div class="slider reveal" id="reviewsSlider">
+          <button class="slider__arrow slider__arrow--prev" id="revPrev" aria-label="Предыдущий отзыв">‹</button>
+          <div class="slider__viewport" id="revViewport">
+            <div class="slider__track" id="revTrack"></div>
+          </div>
+          <button class="slider__arrow slider__arrow--next" id="revNext" aria-label="Следующий отзыв">›</button>
+        </div>
+        <div class="slider__dots" id="revDots" role="tablist" aria-label="Навигация по отзывам"></div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts section section--tinted" id="contacts">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__eyebrow">Контакты</div>
+          <h2 class="section__title">Ждём вас в гости</h2>
+          <div class="skewer-divider" aria-hidden="true"><i></i><b></b><i></i></div>
+        </div>
+        <div class="contacts__grid">
+          <div class="contacts__cards">
+            <a href="tel:+79044877705" class="ccard glass reveal" target="_top">
+              <div class="ccard__icon">📞</div>
+              <div><div class="ccard__cap">Телефон и бронирование</div><div class="ccard__val">+7 (904) 487-77-05</div></div>
+            </a>
+            <a href="https://yandex.ru/maps/?text=%D0%A0%D0%B0%D0%B4%D1%83%D0%B6%D0%BD%D1%8B%D0%B9%2C%203-%D0%B9%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%2022" target="_blank" rel="noopener" class="ccard glass reveal">
+              <div class="ccard__icon">📍</div>
+              <div><div class="ccard__cap">Адрес</div><div class="ccard__val">ХМАО — Югра, Радужный,<br>3-й микрорайон, 22</div></div>
+            </a>
+            <a href="https://vk.ru/shampuroff.grillbar" target="_blank" rel="noopener" class="ccard glass reveal">
+              <div class="ccard__icon">💬</div>
+              <div><div class="ccard__cap">Мы во ВКонтакте</div><div class="ccard__val">vk.ru/shampuroff.grillbar</div></div>
+            </a>
+            <div class="contacts__actions reveal">
+              <a class="btn btn--gold magnetic" href="tel:+79044877705" target="_top">📞 Позвонить</a>
+              <a class="btn btn--outline magnetic" target="_blank" rel="noopener" href="https://yandex.ru/maps/?mode=routes&rtext=~%D0%A0%D0%B0%D0%B4%D1%83%D0%B6%D0%BD%D1%8B%D0%B9%2C%203-%D0%B9%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%2022">📍 Построить маршрут</a>
+              <a class="btn btn--outline magnetic" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=%D0%A0%D0%B0%D0%B4%D1%83%D0%B6%D0%BD%D1%8B%D0%B9%2C%203-%D0%B9%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%2022">🗺 Открыть в Яндекс Картах</a>
+              <a class="btn btn--outline magnetic" target="_blank" rel="noopener" href="https://vk.ru/shampuroff.grillbar">📱 Перейти во ВКонтакте</a>
+            </div>
+          </div>
+          <div class="contacts__map glass reveal">
+            <div class="contacts__map-poster" aria-hidden="true">
+              <span class="contacts__map-pin">📍</span>
+              <span class="contacts__map-cap">ХМАО — Югра, Радужный<br>3-й микрорайон, 22</span>
+            </div>
+            <iframe
+              class="contacts__map-frame"
+              src="https://yandex.ru/map-widget/v1/?ll=77.464000%2C62.135232&z=16&pt=77.464000,62.135232,pm2rdm"
+              title="ШампурOFF на карте — Радужный, 3-й микрорайон, 22"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <svg class="footer__wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z" fill="var(--cream)"></path>
+    </svg>
+    <div class="container footer__inner reveal">
+      <a href="#hero" class="footer__logo" data-scroll>
+        <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><path d="M32 8c5 8-4 12 1 18 4 5 10 7 10 16a11 11 0 0 1-22 0c0-9 6-11 10-16 4-6-4-10 1-18z" fill="currentColor"/></svg>
+        Шампур<em>OFF</em>
+      </a>
+      <div class="footer__info">
+        <a href="tel:+79044877705" target="_top">+7 (904) 487-77-05</a>
+        <a href="https://yandex.ru/maps/?text=%D0%A0%D0%B0%D0%B4%D1%83%D0%B6%D0%BD%D1%8B%D0%B9%2C%203-%D0%B9%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%2022" target="_blank" rel="noopener">Радужный, 3-й микрорайон, 22</a>
+      </div>
+      <div class="footer__social">
+        <a class="btn btn--sm btn--outline" href="https://vk.ru/shampuroff.grillbar" target="_blank" rel="noopener">ВКонтакте</a>
+        <a class="btn btn--sm btn--outline" href="https://yandex.ru/maps/?text=%D0%A0%D0%B0%D0%B4%D1%83%D0%B6%D0%BD%D1%8B%D0%B9%2C%203-%D0%B9%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%2022" target="_blank" rel="noopener">Яндекс Карты</a>
+      </div>
+      <div class="footer__copy">© <span id="year"></span> Гриль-бар «ШампурOFF». Все права защищены.</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр фотографии">
+    <button class="lightbox__close" id="lbClose" aria-label="Закрыть">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Предыдущее фото">‹</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lbImg" src="" alt="Фотография из галереи">
+      <figcaption class="lightbox__caption" id="lbCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Следующее фото">›</button>
+    <button class="share-btn lightbox__share" id="lbShare" aria-label="Поделиться фотографией">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+      <span>Поделиться</span>
+    </button>
+  </div>
+
+  <!-- Курсор-уголёк -->
+  <div class="ember-cursor" id="emberCursor" aria-hidden="true"></div>
+
+  <!-- Плавающая кнопка «Мой выбор» -->
+  <button class="wishlist-fab" id="wishlistFab" aria-haspopup="dialog">
+    <span class="wishlist-fab__icon">🤍</span>
+    <span class="wishlist-fab__label">Мой выбор</span>
+    <span class="wishlist-fab__count" id="wishlistCount">0</span>
+  </button>
+
+  <!-- Модальное окно «Мой выбор» -->
+  <div class="wishlist-modal" id="wishlistModal" role="dialog" aria-modal="true" aria-label="Мои выбранные блюда" aria-hidden="true">
+    <div class="wishlist-modal__box">
+      <div class="wishlist-modal__head">
+        <h3 class="wishlist-modal__title">Мой выбор</h3>
+        <button class="wishlist-modal__close" id="wishlistClose" aria-label="Закрыть">✕</button>
+      </div>
+      <div class="wishlist-modal__list" id="wishlistList"></div>
+      <div class="wishlist-modal__total" id="wishlistTotal" hidden>
+        <span>Итого</span><b id="wishlistSum">0 ₽</b>
+      </div>
+      <div class="wishlist-modal__actions" id="wishlistActions" hidden>
+        <a class="btn btn--gold magnetic" id="wishlistWhatsapp" target="_top">📲 Отправить заявку в WhatsApp</a>
+        <a class="btn btn--outline magnetic" id="wishlistVk" target="_blank" rel="noopener">💬 Отправить во ВКонтакте</a>
+      </div>
+      <p class="wishlist-modal__hint">Нажмите ♡ на понравившихся блюдах в меню — соберём для вас предварительный заказ</p>
+    </div>
+  </div>
+
+  <!-- To top -->
+  <button class="totop" id="toTop" aria-label="Наверх">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
